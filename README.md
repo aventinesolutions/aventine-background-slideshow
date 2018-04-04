@@ -4,3 +4,4 @@
 * 02072017-DSC04906 (Biogradska Gora Montenegro) BiogradskaGreenEternity.jpg
 * 20171021-DSC05517 (National Park Cristoffel, Curação) SpikeyCristoffel.jpg
 * 20180303-DSC05733 (Ice on the Brouwersgracht, Amsterdam) LoneSkaterBrouwersgracht.jpg
+* 20180628-DSC02714 (Capela dos Ossos, Évora) CapelaDosOssos.jpg
