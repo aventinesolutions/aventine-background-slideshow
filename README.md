@@ -5,3 +5,4 @@
 * 20171021-DSC05517 (National Park Cristoffel, Curação) SpikeyCristoffel.jpg
 * 20180303-DSC05733 (Ice on the Brouwersgracht, Amsterdam) LoneSkaterBrouwersgracht.jpg
 * 20180628-DSC02714 (Capela dos Ossos, Évora) CapelaDosOssos.jpg
+* IMG_20170923_155909_20170923160312624 (Haarlemmerdijk, Amsterdam) HaarlemmerdijkPurpleHaze.jpg
