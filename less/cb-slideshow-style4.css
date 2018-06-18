@@ -26,10 +26,10 @@
   opacity: 0;
   z-index: 0;
   -webkit-backface-visibility: hidden;
-  -webkit-animation: imageAnimation 36s linear infinite 0s;
-  -moz-animation: imageAnimation 36s linear infinite 0s;
-  -o-animation: imageAnimation 36s linear infinite 0s;
-  animation: imageAnimation 36s linear infinite 0s;
+  -webkit-animation: imageAnimation 42s linear infinite 0s;
+  -moz-animation: imageAnimation 42s linear infinite 0s;
+  -o-animation: imageAnimation 42s linear infinite 0s;
+  animation: imageAnimation 42s linear infinite 0s;
 }
 
 .cb-slideshow li div {
@@ -40,10 +40,10 @@
   width: 100%;
   text-align: center;
   opacity: 0;
-  -webkit-animation: titleAnimation 36s linear infinite 0s;
-  -moz-animation: titleAnimation 36s linear infinite 0s;
-  -o-animation: titleAnimation 36s linear infinite 0s;
-  animation: titleAnimation 36s linear infinite 0s;
+  -webkit-animation: titleAnimation 42s linear infinite 0s;
+  -moz-animation: titleAnimation 42s linear infinite 0s;
+  -o-animation: titleAnimation 42s linear infinite 0s;
+  animation: titleAnimation 42s linear infinite 0s;
 }
 
 .cb-slideshow li div h3 {
