@@ -1,6 +1,11 @@
 :root {
-  --num-slides: 7;
   --length-animation-seconds: 42s;
+  --delay-slide2: 6s;
+  --delay-slide3: 12s;
+  --delay-slide4: 18s;
+  --delay-slide5: 24s;
+  --delay-slide6: 30s;
+  --delay-slide7: 36s;
 }
 
 .cb-slideshow,
@@ -65,92 +70,92 @@
 
 .cb-slideshow li:nth-child(2) span {
   background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: var(--delay-slide2);
+  -moz-animation-delay: var(--delay-slide2);
+  -o-animation-delay: var(--delay-slide2);
+  animation-delay: var(--delay-slide2);
 }
 
 .cb-slideshow li:nth-child(3) span {
   background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
-  -webkit-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: var(--delay-slide3);
+  -moz-animation-delay: var(--delay-slide3);
+  -o-animation-delay: var(--delay-slide3);
+  animation-delay: var(--delay-slide3);
 }
 
 .cb-slideshow li:nth-child(4) span {
   background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
-  -webkit-animation-delay: 18s;
-  -moz-animation-delay: 18s;
-  -o-animation-delay: 18s;
-  animation-delay: 18s;
+  -webkit-animation-delay: var(--delay-slide4);
+  -moz-animation-delay: var(--delay-slide4);
+  -o-animation-delay: var(--delay-slide4);
+  animation-delay: var(--delay-slide4);
 }
 
 .cb-slideshow li:nth-child(5) span {
   background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
-  -webkit-animation-delay: 24s;
-  -moz-animation-delay: 24s;
-  -o-animation-delay: 24s;
-  animation-delay: 24s;
+  -webkit-animation-delay: var(--delay-slide5);
+  -moz-animation-delay: var(--delay-slide5);
+  -o-animation-delay: var(--delay-slide5);
+  animation-delay: var(--delay-slide5);
 }
 
 .cb-slideshow li:nth-child(6) span {
   background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
-  -webkit-animation-delay: 30s;
-  -moz-animation-delay: 30s;
-  -o-animation-delay: 30s;
-  animation-delay: 30s;
+  -webkit-animation-delay: var(--delay-slide6);
+  -moz-animation-delay: var(--delay-slide6);
+  -o-animation-delay: var(--delay-slide6);
+  animation-delay: var(--delay-slide6);
 }
 
 .cb-slideshow li:nth-child(7) span {
   background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
-  -webkit-animation-delay: 36s;
-  -moz-animation-delay: 36s;
-  -o-animation-delay: 36s;
-  animation-delay: 36s;
+  -webkit-animation-delay: var(--delay-slide7);
+  -moz-animation-delay: var(--delay-slide7);
+  -o-animation-delay: var(--delay-slide7);
+  animation-delay: var(--delay-slide7);
 }
 
 .cb-slideshow li:nth-child(2) div {
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: var(--delay-slide2);
+  -moz-animation-delay: var(--delay-slide2);
+  -o-animation-delay: var(--delay-slide2);
+  animation-delay: var(--delay-slide2);
 }
 
 .cb-slideshow li:nth-child(3) div {
-  -webkit-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: var(--delay-slide3);
+  -moz-animation-delay: var(--delay-slide3);
+  -o-animation-delay: var(--delay-slide3);
+  animation-delay: var(--delay-slide3);
 }
 
 .cb-slideshow li:nth-child(4) div {
-  -webkit-animation-delay: 18s;
-  -moz-animation-delay: 18s;
-  -o-animation-delay: 18s;
-  animation-delay: 18s;
+  -webkit-animation-delay: var(--delay-slide4);
+  -moz-animation-delay: var(--delay-slide4);
+  -o-animation-delay: var(--delay-slide4);
+  animation-delay: var(--delay-slide4);
 }
 
 .cb-slideshow li:nth-child(5) div {
-  -webkit-animation-delay: 24s;
-  -moz-animation-delay: 24s;
-  -o-animation-delay: 24s;
-  animation-delay: 24s;
+  -webkit-animation-delay: var(--delay-slide5);
+  -moz-animation-delay: var(--delay-slide5);
+  -o-animation-delay: var(--delay-slide5);
+  animation-delay: var(--delay-slide5);
 }
 
 .cb-slideshow li:nth-child(6) div {
-  -webkit-animation-delay: 30s;
-  -moz-animation-delay: 30s;
-  -o-animation-delay: 30s;
-  animation-delay: 30s;
+  -webkit-animation-delay: var(--delay-slide6);
+  -moz-animation-delay: var(--delay-slide6);
+  -o-animation-delay: var(--delay-slide6);
+  animation-delay: var(--delay-slide6);
 }
 
 .cb-slideshow li:nth-child(7) div {
-  -webkit-animation-delay: 36s;
-  -moz-animation-delay: 36s;
-  -o-animation-delay: 36s;
-  animation-delay: 36s;
+  -webkit-animation-delay: var(--delay-slide7);
+  -moz-animation-delay: var(--delay-slide7);
+  -o-animation-delay: var(--delay-slide7);
+  animation-delay: var(--delay-slide7);
 }
 
 /* Animation for the slideshow images */
