@@ -1,0 +1,5 @@
+remote_home: /public_html/backgrounds-test
+home_page: index.html
+folders:
+  dist: /public_html/backgrounds-test/dist
+  images: /public_html/backgrounds-test/images
