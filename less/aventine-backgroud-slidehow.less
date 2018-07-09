@@ -23,139 +23,151 @@
   content: '';
 }
 
-.aventine-slideshow li span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: transparent;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  opacity: 0;
-  z-index: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
-  -moz-animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
-  -o-animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
-  animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
-}
+.aventine-slideshow {
+  div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
+    -moz-animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
+    -o-animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
+    animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
 
-.aventine-slideshow li div {
-  z-index: 1000;
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
-  -moz-animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
-  -o-animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
-  animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
-}
+    h3 {
+      font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+      font-size: 240px;
+      padding: 0;
+      line-height: 200px;
+      color: rgba(169, 3, 41, 0.8);
+    }
+  }
 
-.aventine-slideshow li div h3 {
-  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-  font-size: 240px;
-  padding: 0;
-  line-height: 200px;
-  color: rgba(169, 3, 41, 0.8);
-}
+  li {
+    span {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      -webkit-backface-visibility: hidden;
+      -webkit-animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
+      -moz-animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
+      -o-animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
+      animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
+    }
+  }
 
-.aventine-slideshow li:nth-child(1) span {
-  background-image: url(../images/backgrounds/AmsterdamGoldenParachute.jpg);
-}
+  li:nth-child(1) {
+    span {
+      background-image: url(../images/backgrounds/AmsterdamGoldenParachute.jpg);
+    }
+  }
 
-.aventine-slideshow li:nth-child(2) span {
-  background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
-  -webkit-animation-delay: var(--delay-slide2);
-  -moz-animation-delay: var(--delay-slide2);
-  -o-animation-delay: var(--delay-slide2);
-  animation-delay: var(--delay-slide2);
-}
+  li:nth-child(2) {
+    span {
+      background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
+      -webkit-animation-delay: var(--delay-slide2);
+      -moz-animation-delay: var(--delay-slide2);
+      -o-animation-delay: var(--delay-slide2);
+      animation-delay: var(--delay-slide2);
+    }
+    div {
+      -webkit-animation-delay: var(--delay-slide2);
+      -moz-animation-delay: var(--delay-slide2);
+      -o-animation-delay: var(--delay-slide2);
+      animation-delay: var(--delay-slide2);
+    }
+  }
 
-.aventine-slideshow li:nth-child(3) span {
-  background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
-  -webkit-animation-delay: var(--delay-slide3);
-  -moz-animation-delay: var(--delay-slide3);
-  -o-animation-delay: var(--delay-slide3);
-  animation-delay: var(--delay-slide3);
-}
+  li:nth-child(3) {
+    span {
+      background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
+      -webkit-animation-delay: var(--delay-slide3);
+      -moz-animation-delay: var(--delay-slide3);
+      -o-animation-delay: var(--delay-slide3);
+      animation-delay: var(--delay-slide3);
+    }
+    div {
+      -webkit-animation-delay: var(--delay-slide3);
+      -moz-animation-delay: var(--delay-slide3);
+      -o-animation-delay: var(--delay-slide3);
+      animation-delay: var(--delay-slide3);
+    }
+  }
 
-.aventine-slideshow li:nth-child(4) span {
-  background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
-  -webkit-animation-delay: var(--delay-slide4);
-  -moz-animation-delay: var(--delay-slide4);
-  -o-animation-delay: var(--delay-slide4);
-  animation-delay: var(--delay-slide4);
-}
+  li:nth-child(4) {
+    span {
+      background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
+      -webkit-animation-delay: var(--delay-slide4);
+      -moz-animation-delay: var(--delay-slide4);
+      -o-animation-delay: var(--delay-slide4);
+      animation-delay: var(--delay-slide4);
+    }
+    div {
+      -webkit-animation-delay: var(--delay-slide4);
+      -moz-animation-delay: var(--delay-slide4);
+      -o-animation-delay: var(--delay-slide4);
+      animation-delay: var(--delay-slide4);
+    }
+  }
 
-.aventine-slideshow li:nth-child(5) span {
-  background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
-  -webkit-animation-delay: var(--delay-slide5);
-  -moz-animation-delay: var(--delay-slide5);
-  -o-animation-delay: var(--delay-slide5);
-  animation-delay: var(--delay-slide5);
-}
+  li:nth-child(5) {
+    span {
+      background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
+      -webkit-animation-delay: var(--delay-slide5);
+      -moz-animation-delay: var(--delay-slide5);
+      -o-animation-delay: var(--delay-slide5);
+      animation-delay: var(--delay-slide5);
+    }
+    div {
+      -webkit-animation-delay: var(--delay-slide5);
+      -moz-animation-delay: var(--delay-slide5);
+      -o-animation-delay: var(--delay-slide5);
+      animation-delay: var(--delay-slide5);
+    }
+  }
 
-.aventine-slideshow li:nth-child(6) span {
-  background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
-  -webkit-animation-delay: var(--delay-slide6);
-  -moz-animation-delay: var(--delay-slide6);
-  -o-animation-delay: var(--delay-slide6);
-  animation-delay: var(--delay-slide6);
-}
+  li:nth-child(6) {
+    span {
+      background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
+      -webkit-animation-delay: var(--delay-slide6);
+      -moz-animation-delay: var(--delay-slide6);
+      -o-animation-delay: var(--delay-slide6);
+      animation-delay: var(--delay-slide6);
+    }
+    div {
+      -webkit-animation-delay: var(--delay-slide6);
+      -moz-animation-delay: var(--delay-slide6);
+      -o-animation-delay: var(--delay-slide6);
+      animation-delay: var(--delay-slide6);
+    }
+  }
 
-.aventine-slideshow li:nth-child(7) span {
-  background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
-  -webkit-animation-delay: var(--delay-slide7);
-  -moz-animation-delay: var(--delay-slide7);
-  -o-animation-delay: var(--delay-slide7);
-  animation-delay: var(--delay-slide7);
-}
-
-.aventine-slideshow li:nth-child(2) div {
-  -webkit-animation-delay: var(--delay-slide2);
-  -moz-animation-delay: var(--delay-slide2);
-  -o-animation-delay: var(--delay-slide2);
-  animation-delay: var(--delay-slide2);
-}
-
-.aventine-slideshow li:nth-child(3) div {
-  -webkit-animation-delay: var(--delay-slide3);
-  -moz-animation-delay: var(--delay-slide3);
-  -o-animation-delay: var(--delay-slide3);
-  animation-delay: var(--delay-slide3);
-}
-
-.aventine-slideshow li:nth-child(4) div {
-  -webkit-animation-delay: var(--delay-slide4);
-  -moz-animation-delay: var(--delay-slide4);
-  -o-animation-delay: var(--delay-slide4);
-  animation-delay: var(--delay-slide4);
-}
-
-.aventine-slideshow li:nth-child(5) div {
-  -webkit-animation-delay: var(--delay-slide5);
-  -moz-animation-delay: var(--delay-slide5);
-  -o-animation-delay: var(--delay-slide5);
-  animation-delay: var(--delay-slide5);
-}
-
-.aventine-slideshow li:nth-child(6) div {
-  -webkit-animation-delay: var(--delay-slide6);
-  -moz-animation-delay: var(--delay-slide6);
-  -o-animation-delay: var(--delay-slide6);
-  animation-delay: var(--delay-slide6);
-}
-
-.aventine-slideshow li:nth-child(7) div {
-  -webkit-animation-delay: var(--delay-slide7);
-  -moz-animation-delay: var(--delay-slide7);
-  -o-animation-delay: var(--delay-slide7);
-  animation-delay: var(--delay-slide7);
+  li:nth-child(7) {
+    span {
+      background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
+      -webkit-animation-delay: var(--delay-slide7);
+      -moz-animation-delay: var(--delay-slide7);
+      -o-animation-delay: var(--delay-slide7);
+      animation-delay: var(--delay-slide7);
+    }
+    div {
+      -webkit-animation-delay: var(--delay-slide7);
+      -moz-animation-delay: var(--delay-slide7);
+      -o-animation-delay: var(--delay-slide7);
+      animation-delay: var(--delay-slide7);
+    }
+  }
 }
 
 /* Animation for the slideshow images */
