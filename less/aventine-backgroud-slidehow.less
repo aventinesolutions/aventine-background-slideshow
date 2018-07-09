@@ -8,8 +8,8 @@
   --delay-slide7: 36s;
 }
 
-.cb-slideshow,
-.cb-slideshow::after {
+.aventine-slideshow,
+.aventine-slideshow::after {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -19,11 +19,11 @@
   list-style: none;
 }
 
-.cb-slideshow::after {
+.aventine-slideshow::after {
   content: '';
 }
 
-.cb-slideshow li span {
+.aventine-slideshow li span {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -42,7 +42,7 @@
   animation: imageAnimation var(--length-animation-seconds) linear infinite 0s;
 }
 
-.cb-slideshow li div {
+.aventine-slideshow li div {
   z-index: 1000;
   position: absolute;
   bottom: 30px;
@@ -56,7 +56,7 @@
   animation: titleAnimation var(--length-animation-seconds) linear infinite 0s;
 }
 
-.cb-slideshow li div h3 {
+.aventine-slideshow li div h3 {
   font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
   font-size: 240px;
   padding: 0;
@@ -64,11 +64,11 @@
   color: rgba(169, 3, 41, 0.8);
 }
 
-.cb-slideshow li:nth-child(1) span {
+.aventine-slideshow li:nth-child(1) span {
   background-image: url(../images/backgrounds/AmsterdamGoldenParachute.jpg);
 }
 
-.cb-slideshow li:nth-child(2) span {
+.aventine-slideshow li:nth-child(2) span {
   background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
   -webkit-animation-delay: var(--delay-slide2);
   -moz-animation-delay: var(--delay-slide2);
@@ -76,7 +76,7 @@
   animation-delay: var(--delay-slide2);
 }
 
-.cb-slideshow li:nth-child(3) span {
+.aventine-slideshow li:nth-child(3) span {
   background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
   -webkit-animation-delay: var(--delay-slide3);
   -moz-animation-delay: var(--delay-slide3);
@@ -84,7 +84,7 @@
   animation-delay: var(--delay-slide3);
 }
 
-.cb-slideshow li:nth-child(4) span {
+.aventine-slideshow li:nth-child(4) span {
   background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
   -webkit-animation-delay: var(--delay-slide4);
   -moz-animation-delay: var(--delay-slide4);
@@ -92,7 +92,7 @@
   animation-delay: var(--delay-slide4);
 }
 
-.cb-slideshow li:nth-child(5) span {
+.aventine-slideshow li:nth-child(5) span {
   background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
   -webkit-animation-delay: var(--delay-slide5);
   -moz-animation-delay: var(--delay-slide5);
@@ -100,7 +100,7 @@
   animation-delay: var(--delay-slide5);
 }
 
-.cb-slideshow li:nth-child(6) span {
+.aventine-slideshow li:nth-child(6) span {
   background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
   -webkit-animation-delay: var(--delay-slide6);
   -moz-animation-delay: var(--delay-slide6);
@@ -108,7 +108,7 @@
   animation-delay: var(--delay-slide6);
 }
 
-.cb-slideshow li:nth-child(7) span {
+.aventine-slideshow li:nth-child(7) span {
   background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
   -webkit-animation-delay: var(--delay-slide7);
   -moz-animation-delay: var(--delay-slide7);
@@ -116,42 +116,42 @@
   animation-delay: var(--delay-slide7);
 }
 
-.cb-slideshow li:nth-child(2) div {
+.aventine-slideshow li:nth-child(2) div {
   -webkit-animation-delay: var(--delay-slide2);
   -moz-animation-delay: var(--delay-slide2);
   -o-animation-delay: var(--delay-slide2);
   animation-delay: var(--delay-slide2);
 }
 
-.cb-slideshow li:nth-child(3) div {
+.aventine-slideshow li:nth-child(3) div {
   -webkit-animation-delay: var(--delay-slide3);
   -moz-animation-delay: var(--delay-slide3);
   -o-animation-delay: var(--delay-slide3);
   animation-delay: var(--delay-slide3);
 }
 
-.cb-slideshow li:nth-child(4) div {
+.aventine-slideshow li:nth-child(4) div {
   -webkit-animation-delay: var(--delay-slide4);
   -moz-animation-delay: var(--delay-slide4);
   -o-animation-delay: var(--delay-slide4);
   animation-delay: var(--delay-slide4);
 }
 
-.cb-slideshow li:nth-child(5) div {
+.aventine-slideshow li:nth-child(5) div {
   -webkit-animation-delay: var(--delay-slide5);
   -moz-animation-delay: var(--delay-slide5);
   -o-animation-delay: var(--delay-slide5);
   animation-delay: var(--delay-slide5);
 }
 
-.cb-slideshow li:nth-child(6) div {
+.aventine-slideshow li:nth-child(6) div {
   -webkit-animation-delay: var(--delay-slide6);
   -moz-animation-delay: var(--delay-slide6);
   -o-animation-delay: var(--delay-slide6);
   animation-delay: var(--delay-slide6);
 }
 
-.cb-slideshow li:nth-child(7) div {
+.aventine-slideshow li:nth-child(7) div {
   -webkit-animation-delay: var(--delay-slide7);
   -moz-animation-delay: var(--delay-slide7);
   -o-animation-delay: var(--delay-slide7);
@@ -444,18 +444,18 @@
 }
 
 /* Show at least something when animations not supported */
-.no-cssanimations .cb-slideshow li span {
+.no-cssanimations .aventine-slideshow li span {
   opacity: 1;
 }
 
 @media screen and (max-width: 1140px) {
-  .cb-slideshow li div h3 {
+  .aventine-slideshow li div h3 {
     font-size: 100px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .cb-slideshow li div h3 {
+  .aventine-slideshow li div h3 {
     font-size: 50px;
   }
 }
