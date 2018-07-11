@@ -69,8 +69,7 @@
   li:nth-child(2) {
     @delay-slide2: @length-animation / @total-slides;
 
-    span {
-      background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
+    .delay-slide2() {
       -webkit-animation-delay: @delay-slide2;
       -moz-animation-delay: @delay-slide2;
       -o-animation-delay: @delay-slide2;
@@ -78,18 +77,20 @@
     }
 
     div {
-      -webkit-animation-delay: @delay-slide2;
-      -moz-animation-delay: @delay-slide2;
-      -o-animation-delay: @delay-slide2;
-      animation-delay: @delay-slide2;
+      .delay-slide2();
+    }
+
+    span {
+      .delay-slide2();
+
+      background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
     }
   }
 
   li:nth-child(3) {
     @delay-slide3: 2s * @length-animation / @total-slides;
 
-    span {
-      background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
+    .delay-slide3() {
       -webkit-animation-delay: @delay-slide3;
       -moz-animation-delay: @delay-slide3;
       -o-animation-delay: @delay-slide3;
@@ -97,18 +98,20 @@
     }
 
     div {
-      -webkit-animation-delay: @delay-slide3;
-      -moz-animation-delay: @delay-slide3;
-      -o-animation-delay: @delay-slide3;
-      animation-delay: @delay-slide3;
+      .delay-slide3();
+    }
+
+    span {
+      .delay-slide3();
+
+      background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
     }
   }
 
   li:nth-child(4) {
     @delay-slide4: 3s * @length-animation / @total-slides;
 
-    span {
-      background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
+    .delay-slide4() {
       -webkit-animation-delay: @delay-slide4;
       -moz-animation-delay: @delay-slide4;
       -o-animation-delay: @delay-slide4;
@@ -116,18 +119,20 @@
     }
 
     div {
-      -webkit-animation-delay: @delay-slide4;
-      -moz-animation-delay: @delay-slide4;
-      -o-animation-delay: @delay-slide4;
-      animation-delay: @delay-slide4;
+      .delay-slide4();
+    }
+
+    span {
+      .delay-slide4();
+
+      background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
     }
   }
 
   li:nth-child(5) {
     @delay-slide5: 4s * @length-animation / @total-slides;
 
-    span {
-      background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
+    .delay-slide5() {
       -webkit-animation-delay: @delay-slide5;
       -moz-animation-delay: @delay-slide5;
       -o-animation-delay: @delay-slide5;
@@ -135,18 +140,20 @@
     }
 
     div {
-      -webkit-animation-delay: @delay-slide5;
-      -moz-animation-delay: @delay-slide5;
-      -o-animation-delay: @delay-slide5;
-      animation-delay: @delay-slide5;
+      .delay-slide5();
+    }
+
+    span {
+      .delay-slide5();
+
+      background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
     }
   }
 
   li:nth-child(6) {
     @delay-slide6: 5s * @length-animation / @total-slides;
 
-    span {
-      background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
+    .delay-slide6() {
       -webkit-animation-delay: @delay-slide6;
       -moz-animation-delay: @delay-slide6;
       -o-animation-delay: @delay-slide6;
@@ -154,18 +161,20 @@
     }
 
     div {
-      -webkit-animation-delay: @delay-slide6;
-      -moz-animation-delay: @delay-slide6;
-      -o-animation-delay: @delay-slide6;
-      animation-delay: @delay-slide6;
+      .delay-slide6();
+    }
+
+    span {
+      .delay-slide6();
+
+      background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
     }
   }
 
   li:nth-child(7) {
     @delay-slide7: 6s * @length-animation / @total-slides;
 
-    span {
-      background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
+    .delay-slide7() {
       -webkit-animation-delay: @delay-slide7;
       -moz-animation-delay: @delay-slide7;
       -o-animation-delay: @delay-slide7;
@@ -173,10 +182,13 @@
     }
 
     div {
-      -webkit-animation-delay: @delay-slide7;
-      -moz-animation-delay: @delay-slide7;
-      -o-animation-delay: @delay-slide7;
-      animation-delay: @delay-slide7;
+      .delay-slide7();
+    }
+
+    span {
+      .delay-slide7();
+
+      background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
     }
   }
 }
