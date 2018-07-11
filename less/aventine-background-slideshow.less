@@ -1,7 +1,5 @@
-:root {
-  --length-animation: 42s;
-  --total-slides: 7s;
-}
+@length-animation: 42s;
+@total-slides: 7s;
 
 .aventine-slideshow,
 .aventine-slideshow::after {
@@ -27,10 +25,10 @@
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-animation: titleAnimation var(--length-animation) linear infinite 0s;
-    -moz-animation: titleAnimation var(--length-animation) linear infinite 0s;
-    -o-animation: titleAnimation var(--length-animation) linear infinite 0s;
-    animation: titleAnimation var(--length-animation) linear infinite 0s;
+    -webkit-animation: titleAnimation @length-animation linear infinite 0s;
+    -moz-animation: titleAnimation @length-animation linear infinite 0s;
+    -o-animation: titleAnimation @length-animation linear infinite 0s;
+    animation: titleAnimation @length-animation linear infinite 0s;
 
     h3 {
       font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
@@ -55,10 +53,10 @@
       opacity: 0;
       z-index: 0;
       -webkit-backface-visibility: hidden;
-      -webkit-animation: imageAnimation var(--length-animation) linear infinite 0s;
-      -moz-animation: imageAnimation var(--length-animation) linear infinite 0s;
-      -o-animation: imageAnimation var(--length-animation) linear infinite 0s;
-      animation: imageAnimation var(--length-animation) linear infinite 0s;
+      -webkit-animation: imageAnimation @length-animation linear infinite 0s;
+      -moz-animation: imageAnimation @length-animation linear infinite 0s;
+      -o-animation: imageAnimation @length-animation linear infinite 0s;
+      animation: imageAnimation @length-animation linear infinite 0s;
     }
   }
 
@@ -69,104 +67,116 @@
   }
 
   li:nth-child(2) {
+    @delay-slide2: @length-animation / @total-slides;
+
     span {
       background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
-      -webkit-animation-delay: ~"-webkit-calc(var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide2;
+      -moz-animation-delay: @delay-slide2;
+      -o-animation-delay: @delay-slide2;
+      animation-delay: @delay-slide2;
     }
 
     div {
-      -webkit-animation-delay: ~"-webkit-calc(var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide2;
+      -moz-animation-delay: @delay-slide2;
+      -o-animation-delay: @delay-slide2;
+      animation-delay: @delay-slide2;
     }
   }
 
   li:nth-child(3) {
+    @delay-slide3: 2s * @length-animation / @total-slides;
+
     span {
       background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
-      -webkit-animation-delay: ~"-webkit-calc(2s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(2s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(2s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(2s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide3;
+      -moz-animation-delay: @delay-slide3;
+      -o-animation-delay: @delay-slide3;
+      animation-delay: @delay-slide3;
     }
 
     div {
-      -webkit-animation-delay: ~"-webkit-calc(2s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(2s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(2s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(2s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide3;
+      -moz-animation-delay: @delay-slide3;
+      -o-animation-delay: @delay-slide3;
+      animation-delay: @delay-slide3;
     }
   }
 
   li:nth-child(4) {
+    @delay-slide4: 3s * @length-animation / @total-slides;
+
     span {
       background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
-      -webkit-animation-delay: ~"-webkit-calc(3s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(3s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(3s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(3s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide4;
+      -moz-animation-delay: @delay-slide4;
+      -o-animation-delay: @delay-slide4;
+      animation-delay: @delay-slide4;
     }
 
     div {
-      -webkit-animation-delay: ~"-webkit-calc(3s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(3s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(3s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(3s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide4;
+      -moz-animation-delay: @delay-slide4;
+      -o-animation-delay: @delay-slide4;
+      animation-delay: @delay-slide4;
     }
   }
 
   li:nth-child(5) {
+    @delay-slide5: 4s * @length-animation / @total-slides;
+
     span {
       background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
-      -webkit-animation-delay: ~"-webkit-calc(4s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(4s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(4s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(4s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide5;
+      -moz-animation-delay: @delay-slide5;
+      -o-animation-delay: @delay-slide5;
+      animation-delay: @delay-slide5;
     }
 
     div {
-      -webkit-animation-delay: ~"-webkit-calc(4s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(4s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(4s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(4s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide5;
+      -moz-animation-delay: @delay-slide5;
+      -o-animation-delay: @delay-slide5;
+      animation-delay: @delay-slide5;
     }
   }
 
   li:nth-child(6) {
+    @delay-slide6: 5s * @length-animation / @total-slides;
+
     span {
       background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
-      -webkit-animation-delay: ~"-webkit-calc(5s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(5s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(5s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(5s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide6;
+      -moz-animation-delay: @delay-slide6;
+      -o-animation-delay: @delay-slide6;
+      animation-delay: @delay-slide6;
     }
 
     div {
-      -webkit-animation-delay: ~"-webkit-calc(5s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(5s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(5s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(5s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide6;
+      -moz-animation-delay: @delay-slide6;
+      -o-animation-delay: @delay-slide6;
+      animation-delay: @delay-slide6;
     }
   }
 
   li:nth-child(7) {
+    @delay-slide7: 6s * @length-animation / @total-slides;
+
     span {
       background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
-      -webkit-animation-delay: ~"-webkit-calc(6s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(6s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(6s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(6s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide7;
+      -moz-animation-delay: @delay-slide7;
+      -o-animation-delay: @delay-slide7;
+      animation-delay: @delay-slide7;
     }
 
     div {
-      -webkit-animation-delay: ~"-webkit-calc(6s * var(--length-animation) / var(--total-slides))";
-      -moz-animation-delay: ~"-moz-calc(6s * var(--length-animation) / var(--total-slides))";
-      -o-animation-delay: ~"-o-calc(6s * var(--length-animation) / var(--total-slides))";
-      animation-delay: ~"calc(6s * var(--length-animation) / var(--total-slides))";
+      -webkit-animation-delay: @delay-slide7;
+      -moz-animation-delay: @delay-slide7;
+      -o-animation-delay: @delay-slide7;
+      animation-delay: @delay-slide7;
     }
   }
 }
