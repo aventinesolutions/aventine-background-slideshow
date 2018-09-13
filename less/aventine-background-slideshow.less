@@ -1,6 +1,3 @@
-@length-animation: 175s;
-@total-slides: 7s;
-
 .aventine-slideshow,
 .aventine-slideshow::after {
   position: fixed;
@@ -54,7 +51,7 @@
 
   li:nth-child(1) {
     span {
-      background-image: url(../images/backgrounds/AmsterdamGoldenParachute.jpg);
+      background-image: url(@slide1-url);
     }
   }
 
@@ -74,7 +71,7 @@
 
     span {
       .delay-slide2();
-      background-image: url(../images/backgrounds/CapelaDosOssos.jpg);
+      background-image: url(@slide2-url);
     }
   }
 
@@ -94,8 +91,7 @@
 
     span {
       .delay-slide3();
-
-      background-image: url(../images/backgrounds/HaarlemmerdijkPurpleHaze.jpg);
+      background-image: url(@slide3-url);
     }
   }
 
@@ -115,7 +111,7 @@
 
     span {
       .delay-slide4();
-      background-image: url(../images/backgrounds/LavenderDubrovnikDreams.jpg);
+      background-image: url(@slide4-url);
     }
   }
 
@@ -135,7 +131,7 @@
 
     span {
       .delay-slide5();
-      background-image: url(../images/backgrounds/LoneSkaterBrouwersgracht.jpg);
+      background-image: url(@slide5-url);
     }
   }
 
@@ -155,7 +151,7 @@
 
     span {
       .delay-slide6();
-      background-image: url(../images/backgrounds/SpikeyCristoffel.jpg);
+      background-image: url(@slide6-url);
     }
   }
 
@@ -175,7 +171,7 @@
 
     span {
       .delay-slide7();
-      background-image: url(../images/backgrounds/ÉvoraPlatonic.jpg);
+      background-image: url(@slide7-url);
     }
   }
 }
